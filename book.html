@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        How to make a Pagination
+        using HTML and CSS ?
+    </title>
+
+    <style>
+        #div1 {
+            background-image: url(2.jpg);
+            height: 100vh;
+            /*background-repeat: no-repeat;*/
+            background-size: auto;
+            background-position-x: center;
+        }
+
+        .content {
+            position: absolute;
+            top: 200px;
+            right: 30px;
+            margin: 0px;
+            padding: 0px;
+            width: 300px;
+            height: 350px;
+            background-color: pink;
+
+        }
+
+        .content2 {
+            position: absolute;
+            top: 250px;
+            right: 900px;
+            margin: 0px;
+            padding: 0px;
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+
+        }
+
+        h1 {
+            color: white;
+            font-size: 3.9em;
+            text-align: center;
+        }
+
+        .cover {
+            width: 300px;
+            height: 350px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background-color: pink;
+            transform: rotate(0deg);
+            transform-style: preserve-3d;
+            transform-origin: left;
+            transition: all .5s;
+        }
+
+        .content:hover .cover {
+            transform: rotateY(-180deg);
+
+        }
+
+        figure {
+            margin: 0;
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 020%;
+            backface-visibility: hidden;
+        }
+
+        figure.back {
+
+            transform: rotateY(180deg);
+        }
+
+        .cover2 {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background-color: pink;
+            transform: rotate(0deg);
+            transform-style: preserve-3d;
+            transform-origin: right;
+            transition: all .5s;
+        }
+
+        .content2:hover .cover2 {
+            transform: rotateY(180deg);
+
+        }
+
+        figure {
+            margin: 0;
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 020%;
+            backface-visibility: hidden;
+        }
+
+        figure.back2 {
+
+            transform: rotateY(-180deg);
+        }
+
+        p {
+            font-size: 35px;
+
+        }
+
+        div1 {
+            font-size: 50px;
+        }
+
+        div2 {
+            position: absolute;
+            top: 180px;
+            left: 600px;
+            letter-spacing: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="firework.html"> </a>
+    <div id="div1">
+        
+
+    </div>
+    <div2>
+        🌟🌟
+    </div2>
+    <!-- content in this Section -->
+    <div class="content">
+        <img src="3.jpg" alt="mohan" width="300" height="350">
+        <div class="cover">
+            <figure class="front">
+                <img src="2.jpg"alt="mohan"width="300"height="350">
+            </figure>
+            <figure class="back"><img src="4.jpg" alt="mohan" width="300" height="350"></figure>
+        </div>
+        <!-- pagination elements -->
+    </div>
+    <div class="content2">
+        <video width="300" height="300" controls>
+            <source src="vid1.mp4" type="video/mp4">
+        </video>
+        <div class="cover2">
+            <figure class="front2">
+                <img src="2.jpg"alt ="mohan"width="300"height="300">
+            </figure>
+            <figure class="back2"><video width="300" height="300" controls>
+                    <source src="vid2.mp4" type="video/mp4">
+                </video>
+            </figure>
+        </div>
+        <!-- pagination elements -->
+    </div>
+
+</body>
+
+</html>
